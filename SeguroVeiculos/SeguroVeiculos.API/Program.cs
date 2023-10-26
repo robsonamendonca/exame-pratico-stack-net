@@ -1,16 +1,20 @@
-using Microsoft.AspNetCore.SignalR;
+using FluentValidation;
+using Infra.Repository.DbContext;
+using Infra.Repository.Repositories.AddSeguro;
+using SeguroVeiculos.API.Models.AddSeguro;
 using SeguroVeiculos.Application.UseCases.AddSeguro;
 using SeguroVeiculos.Domain.Contracts.Repositories.AddSeguro;
 using SeguroVeiculos.Domain.Contracts.UseCases.AddSeguro;
-using SeguroVeiculos.Infrastructure.Repositories.Addseguro;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 // Add services to the container.
-//builder.Services.AddSingleton<IDbContext, DbContext>();
+builder.Services.AddSingleton<IDbContext, DbContext>();
 builder.Services.AddSingleton<IAddSeguroRepository, AddSeguroRepository>();
 builder.Services.AddScoped<IAddSeguroUseCase, AddSeguroUseCase>();
+builder.Services.AddTransient<IValidator<AddSeguroInput>, AddSeguroInputValidator>();
 
 
 builder.Services.AddControllers();
@@ -32,5 +36,9 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+var cultureInfo = new CultureInfo("pt-BR");
+CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 
 app.Run();

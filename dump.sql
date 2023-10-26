@@ -19,3 +19,23 @@ CREATE TABLE SeguroVeiculo (
     FOREIGN KEY (SeguradoId) REFERENCES Segurado(Id),
     FOREIGN KEY (VeiculoId) REFERENCES Veiculo(Id)
 );
+
+CREATE TABLE SeguroVeiculo (
+    Nome VARCHAR(255),
+    CPF VARCHAR(11),
+    ValorVeiculo DECIMAL(10, 2),
+    MarcaModeloVeiculo VARCHAR(255)
+ValorSeguro DECIMAL(10, 2)
+);
+
+
+===
+
+CREATE TABLE SeguroVeiculo (
+ Id INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(255),
+    CPF VARCHAR(11),
+    ValorVeiculo DECIMAL(10, 2),
+    MarcaModeloVeiculo VARCHAR(255),
+ValorSeguro DECIMAL(10, 2)
+);

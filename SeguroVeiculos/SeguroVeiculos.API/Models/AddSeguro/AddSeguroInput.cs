@@ -4,9 +4,8 @@
     {
         public string Nome { get; set; } = string.Empty;
         public string CPF { get; set; } = string.Empty;
-        public string ValorVeiculo { get; set; } = string.Empty;
+        public decimal ValorVeiculo { get; set; } = 0;
         public string MarcaModeloVeiculo { get; set; } = string.Empty;
-        public string ValorSeguro { get; set; } = string.Empty;
 
     }
 }

@@ -8,7 +8,7 @@ namespace SeguroVeiculos.Domain.Entities
 {
     public class Seguro
     {
-        public Seguro(string nome, string cpf, string valorVeiculo, string marcaModeloveiculo, string valorSeguro)
+        public Seguro(string nome, string cpf, decimal valorVeiculo, string marcaModeloveiculo, decimal valorSeguro)
         {
             Nome = nome;
             CPF = cpf;
@@ -19,8 +19,8 @@ namespace SeguroVeiculos.Domain.Entities
 
         public string Nome { get; private set; } 
         public string CPF { get; private set; } 
-        public string ValorVeiculo { get; private set; }
+        public decimal ValorVeiculo { get; private set; }
         public string MarcaModeloVeiculo { get; private set; } 
-        public string ValorSeguro { get; private set; } 
+        public decimal ValorSeguro { get; private set; } 
     }
 }
