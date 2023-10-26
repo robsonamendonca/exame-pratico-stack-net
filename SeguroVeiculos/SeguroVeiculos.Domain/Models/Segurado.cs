@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SeguroVeiculos.Domain.Models
 {
-    internal class Segurado
+    public class Segurado
     {
         public int Id { get; set; }
         public string Nome { get; set; }

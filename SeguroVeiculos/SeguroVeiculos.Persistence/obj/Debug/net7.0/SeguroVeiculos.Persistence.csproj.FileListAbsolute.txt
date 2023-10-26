@@ -3,3 +3,15 @@ C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\
 C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\obj\Debug\net7.0\SeguroVeiculos.Persistence.AssemblyInfoInputs.cache
 C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\obj\Debug\net7.0\SeguroVeiculos.Persistence.AssemblyInfo.cs
 C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\obj\Debug\net7.0\SeguroVeiculos.Persistence.csproj.CoreCompileInputs.cache
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\bin\Debug\net7.0\SeguroVeiculos.Persistence.deps.json
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\bin\Debug\net7.0\SeguroVeiculos.Persistence.runtimeconfig.json
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\bin\Debug\net7.0\SeguroVeiculos.Persistence.dll
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\bin\Debug\net7.0\SeguroVeiculos.Persistence.pdb
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\bin\Debug\net7.0\SeguroVeiculos.Domain.dll
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\bin\Debug\net7.0\SeguroVeiculos.Domain.pdb
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\obj\Debug\net7.0\SeguroVeiculos.Persistence.csproj.CopyComplete
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\obj\Debug\net7.0\SeguroVeiculos.Persistence.dll
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\obj\Debug\net7.0\refint\SeguroVeiculos.Persistence.dll
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\obj\Debug\net7.0\SeguroVeiculos.Persistence.pdb
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\obj\Debug\net7.0\SeguroVeiculos.Persistence.genruntimeconfig.cache
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\obj\Debug\net7.0\ref\SeguroVeiculos.Persistence.dll

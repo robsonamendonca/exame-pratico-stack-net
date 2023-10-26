@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SeguroVeiculos.Domain.Models
 {
-    internal class Veiculo
+    public class Veiculo
     {
         public int Id { get; set; }
         public decimal Valor { get; set; }

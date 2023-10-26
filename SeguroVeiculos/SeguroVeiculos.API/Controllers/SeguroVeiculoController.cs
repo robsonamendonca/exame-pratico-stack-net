@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SeguroVeiculos.Application.Services;
 
 namespace SeguroVeiculos.API.Controllers
 {
@@ -13,12 +14,35 @@ namespace SeguroVeiculos.API.Controllers
             _calculoSeguroService = calculoSeguroService;
         }
 
+        [HttpPost("gravar")]
+        public IActionResult GravarSeguroVeiculo([FromBody] decimal valorVeiculo)
+        {
+            var premio = _calculoSeguroService.CalcularSeguro(valorVeiculo);
+            return Ok(premio);
+        }
+
+
         [HttpPost("calcular")]
         public IActionResult CalcularSeguro([FromBody] decimal valorVeiculo)
         {
             var premio = _calculoSeguroService.CalcularSeguro(valorVeiculo);
             return Ok(premio);
         }
+
+        [HttpPost("pesquisar")]
+        public IActionResult Pesquisar([FromBody] decimal valorVeiculo)
+        {
+            var premio = _calculoSeguroService.CalcularSeguro(valorVeiculo);
+            return Ok(premio);
+        }
+
+        [HttpPost("gerarRelatorio")]
+        public IActionResult gerarRelatorio([FromBody] decimal valorVeiculo)
+        {
+            var premio = _calculoSeguroService.CalcularSeguro(valorVeiculo);
+            return Ok(premio);
+        }
+
     }
 
 }

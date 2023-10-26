@@ -1,29 +1,18 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
 using SeguroVeiculos.Domain.Models;
 
-namespace SeguroVeiculos.Persistence.DbContext
+namespace Mysql.Context
 {
-
-    public class SeguroVeiculosDbContext : DbContext
+    public class AppDbContext : DbContext
     {
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+        }
+
         public DbSet<Veiculo> Veiculos { get; set; }
         public DbSet<Segurado> Segurados { get; set; }
 
-        public SeguroVeiculosDbContext(DbContextOptions<SeguroVeiculosDbContext> options)
-            : base(options)
-        {
-        }
+        public DbSet<SeguroVeiculo> SeguroVeiculos {  get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            // Configurações de mapeamento aqui
-        }
     }
-
 }
