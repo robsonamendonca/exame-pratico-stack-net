@@ -1,0 +1,5 @@
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\obj\Debug\net7.0\SeguroVeiculos.Persistence.csproj.AssemblyReference.cache
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\obj\Debug\net7.0\SeguroVeiculos.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\obj\Debug\net7.0\SeguroVeiculos.Persistence.AssemblyInfoInputs.cache
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\obj\Debug\net7.0\SeguroVeiculos.Persistence.AssemblyInfo.cs
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Persistence\obj\Debug\net7.0\SeguroVeiculos.Persistence.csproj.CoreCompileInputs.cache

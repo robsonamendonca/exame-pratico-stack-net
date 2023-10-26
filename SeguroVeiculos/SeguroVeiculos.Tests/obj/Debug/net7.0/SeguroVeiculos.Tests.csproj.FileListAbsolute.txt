@@ -1,0 +1,6 @@
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Tests\bin\Debug\net7.0\CoverletSourceRootsMapping
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Tests\obj\Debug\net7.0\SeguroVeiculos.Tests.csproj.AssemblyReference.cache
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Tests\obj\Debug\net7.0\SeguroVeiculos.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Tests\obj\Debug\net7.0\SeguroVeiculos.Tests.AssemblyInfoInputs.cache
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Tests\obj\Debug\net7.0\SeguroVeiculos.Tests.AssemblyInfo.cs
+C:\git\robsonamendonca\teste-entrevistas\exame-pratico-stack-net\SeguroVeiculos\SeguroVeiculos.Tests\obj\Debug\net7.0\SeguroVeiculos.Tests.csproj.CoreCompileInputs.cache
