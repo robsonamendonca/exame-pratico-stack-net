@@ -1,16 +1,16 @@
-
-using Microsoft.EntityFrameworkCore;
-using Mysql.Context;
+using Microsoft.AspNetCore.SignalR;
+using SeguroVeiculos.Application.UseCases.AddSeguro;
+using SeguroVeiculos.Domain.Contracts.Repositories.AddSeguro;
+using SeguroVeiculos.Domain.Contracts.UseCases.AddSeguro;
+using SeguroVeiculos.Infrastructure.Repositories.Addseguro;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-string mySqlConnection =
-              builder.Configuration.GetConnectionString("DefaultConnection");
 
-builder.Services.AddDbContextPool<AppDbContext>(options =>
-                options.UseMySql(mySqlConnection,
-                      ServerVersion.AutoDetect(mySqlConnection)));
+// Add services to the container.
+//builder.Services.AddSingleton<IDbContext, DbContext>();
+builder.Services.AddSingleton<IAddSeguroRepository, AddSeguroRepository>();
+builder.Services.AddScoped<IAddSeguroUseCase, AddSeguroUseCase>();
 
 
 builder.Services.AddControllers();

@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,8 +30,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
               "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Application\\SeguroVeiculos.Application.csproj": {
                 "projectPath": "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Application\\SeguroVeiculos.Application.csproj"
@@ -39,8 +39,8 @@
               "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Domain\\SeguroVeiculos.Domain.csproj": {
                 "projectPath": "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Domain\\SeguroVeiculos.Domain.csproj"
               },
-              "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Persistence\\SeguroVeiculos.Persistence.csproj": {
-                "projectPath": "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Persistence\\SeguroVeiculos.Persistence.csproj"
+              "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Infrastructure\\SeguroVeiculos.Infrastructure.csproj": {
+                "projectPath": "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Infrastructure\\SeguroVeiculos.Infrastructure.csproj"
               }
             }
           }
@@ -52,17 +52,9 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
-              "target": "Package",
-              "version": "[7.0.13, )"
-            },
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[7.0.11, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -109,7 +101,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -117,14 +109,11 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
               "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Domain\\SeguroVeiculos.Domain.csproj": {
                 "projectPath": "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Domain\\SeguroVeiculos.Domain.csproj"
-              },
-              "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Persistence\\SeguroVeiculos.Persistence.csproj": {
-                "projectPath": "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Persistence\\SeguroVeiculos.Persistence.csproj"
               }
             }
           }
@@ -136,8 +125,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -176,7 +165,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -184,8 +173,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -196,8 +185,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -218,14 +207,14 @@
         }
       }
     },
-    "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Persistence\\SeguroVeiculos.Persistence.csproj": {
+    "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Infrastructure\\SeguroVeiculos.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Persistence\\SeguroVeiculos.Persistence.csproj",
-        "projectName": "SeguroVeiculos.Persistence",
-        "projectPath": "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Persistence\\SeguroVeiculos.Persistence.csproj",
+        "projectUniqueName": "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Infrastructure\\SeguroVeiculos.Infrastructure.csproj",
+        "projectName": "SeguroVeiculos.Infrastructure",
+        "projectPath": "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Infrastructure\\SeguroVeiculos.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Persistence\\obj\\",
+        "outputPath": "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -236,7 +225,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -244,8 +233,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
               "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Domain\\SeguroVeiculos.Domain.csproj": {
                 "projectPath": "C:\\git\\robsonamendonca\\teste-entrevistas\\exame-pratico-stack-net\\SeguroVeiculos\\SeguroVeiculos.Domain\\SeguroVeiculos.Domain.csproj"
@@ -260,24 +249,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.13, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.13, )"
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            }
-          },
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
