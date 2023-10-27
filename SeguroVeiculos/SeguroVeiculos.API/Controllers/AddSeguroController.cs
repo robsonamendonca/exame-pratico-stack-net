@@ -7,7 +7,8 @@ using WebApi.Models.Error;
 
 namespace SeguroVeiculos.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Produces("application/json")]
+    [Route("api")]
     [ApiController]
     public class AddSeguroController : ControllerBase
     {
@@ -21,6 +22,7 @@ namespace SeguroVeiculos.API.Controllers
 
 
         [HttpPost]
+        [Route("Gravar/")]
         public IActionResult AddSeguro(AddSeguroInput input)
         {
             var validatorResult = _addSeguroInputrValidator.Validate(input);
@@ -28,26 +30,32 @@ namespace SeguroVeiculos.API.Controllers
             {
                 return BadRequest(validatorResult.Errors.ToCustomValidationFailure());
             }
-            var seguro = new Seguro(input.Nome, input.CPF, input.ValorVeiculo, input.MarcaModeloVeiculo);
+            var seguro = new Seguro(input.Nome, input.CPF,input.Idade, input.ValorVeiculo, input.MarcaModeloVeiculo);
             seguro.CalcularSeguro();
             _addSeguroUseCase.AddSeguro(seguro);
             return Created("", seguro);
         }
 
         [HttpGet]
-        [Route("Pesquisar/")]
+        [Route("Pesquisar/{CPF}")]
         public IActionResult GetSeguro(string CPF)
         {
-             _addSeguroUseCase.PesquisarSeguro(CPF);
-            return Ok(CPF);
+             var  seguro = _addSeguroUseCase.PesquisarSeguro(CPF);
+            if (seguro== null)
+            {
+                return BadRequest("Nenhum dado encontrado!");
+            }
+            return Ok(seguro);
         }
 
 
         [HttpGet]
-        [Route("Calcular/")]
+        [Route("Calcular/{valorVeiculo}")]
         public IActionResult GetCalcular(double valorVeiculo)
         {
-            return Ok(valorVeiculo);
+            var seguro = new Seguro("Simulação","999999",99,valorVeiculo,"SIMULACAO_POR_VALOR");
+            seguro.CalcularSeguro();
+            return Ok(seguro);
         }
 
         [HttpGet]

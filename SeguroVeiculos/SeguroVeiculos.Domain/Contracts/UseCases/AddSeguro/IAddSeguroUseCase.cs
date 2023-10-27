@@ -6,7 +6,7 @@ namespace SeguroVeiculos.Domain.Contracts.UseCases.AddSeguro
     {
         void AddSeguro(Seguro seguro);
 
-        void PesquisarSeguro(string CPF);
+        Seguro PesquisarSeguro(string CPF);
 
         void CalcularSeguro(double valorVeiculo);
     }

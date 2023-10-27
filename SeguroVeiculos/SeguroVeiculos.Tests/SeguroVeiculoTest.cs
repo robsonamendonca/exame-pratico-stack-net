@@ -13,12 +13,13 @@ namespace SeguroVeiculos.Tests
             const double resultadoEsperado = 270.37;
             const string nome = "Usuario1";
             const string cpf = "11111";
+            const int idade = 30;
             const double valorVeiruclo = 10000.00;
             const string marcaModelo = "FIAT - UNO";
 
 
             //act
-            var seg = new Seguro(nome, cpf, valorVeiruclo,marcaModelo);
+            var seg = new Seguro(nome, cpf,idade, valorVeiruclo,marcaModelo);
             seg.CalcularSeguro();
             var resultadoAtual = seg.ValorSeguro;
 

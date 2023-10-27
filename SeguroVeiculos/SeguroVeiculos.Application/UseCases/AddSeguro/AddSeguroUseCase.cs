@@ -1,11 +1,6 @@
 ﻿using SeguroVeiculos.Domain.Contracts.Repositories.AddSeguro;
 using SeguroVeiculos.Domain.Contracts.UseCases.AddSeguro;
 using SeguroVeiculos.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SeguroVeiculos.Application.UseCases.AddSeguro
 {
@@ -25,12 +20,12 @@ namespace SeguroVeiculos.Application.UseCases.AddSeguro
 
         public void CalcularSeguro(double valorVeiculo)
         {
-            throw new NotImplementedException();
+            _addSeguroRepository.CalulcarSeguro(valorVeiculo);
         }
 
-        public void PesquisarSeguro(string CPF)
+        public Seguro PesquisarSeguro(string CPF)
         {
-            throw new NotImplementedException();
+            return _addSeguroRepository.PesquisarSeguro(CPF);
         }
 
 

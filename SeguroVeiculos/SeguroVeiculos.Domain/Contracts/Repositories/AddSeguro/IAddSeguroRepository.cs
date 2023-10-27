@@ -11,9 +11,9 @@ namespace SeguroVeiculos.Domain.Contracts.Repositories.AddSeguro
     {
         void AddSeguro(Seguro seguro);
 
-        void PesquisarSeguro(string CPF);
+        Seguro PesquisarSeguro(string CPF);
 
-        void CalulcarSeguro(double valorVeiculo);
+        Seguro CalulcarSeguro(double valorVeiculo);
 
         void GerarRelatorio();
 

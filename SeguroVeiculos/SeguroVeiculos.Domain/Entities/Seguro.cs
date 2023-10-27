@@ -8,16 +8,20 @@ namespace SeguroVeiculos.Domain.Entities
 {
     public class Seguro
     {
-        public Seguro(string nome, string cpf, double valorVeiculo, string marcaModeloveiculo)
+        public Seguro() { }
+        public Seguro(string nome, string cpf,int idade, double valorVeiculo, string marcaModeloveiculo)
         {
             Nome = nome;
             CPF = cpf;
+            Idade = idade;
             ValorVeiculo = valorVeiculo;
             MarcaModeloVeiculo = marcaModeloveiculo;
         }
 
         public string Nome { get; private set; } 
         public string CPF { get; private set; } 
+        
+        public int Idade { get; private set; }
         public double ValorVeiculo { get; private set; }
         public string MarcaModeloVeiculo { get; private set; } 
         public double ValorSeguro { get; private set; }
