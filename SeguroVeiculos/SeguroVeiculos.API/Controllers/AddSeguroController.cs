@@ -45,7 +45,7 @@ namespace SeguroVeiculos.API.Controllers
 
         [HttpGet]
         [Route("Calcular/")]
-        public IActionResult GetCalcular(decimal valorVeiculo)
+        public IActionResult GetCalcular(double valorVeiculo)
         {
             return Ok(valorVeiculo);
         }

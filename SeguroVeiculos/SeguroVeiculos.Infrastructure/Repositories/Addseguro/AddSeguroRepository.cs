@@ -21,9 +21,9 @@ namespace Infra.Repository.Repositories.AddSeguro
             var parameters = new DynamicParameters();
             parameters.Add("nome", Seguro.Nome, System.Data.DbType.String);
             parameters.Add("cpf", Seguro.CPF, System.Data.DbType.String);
-            parameters.Add("valorveiculo", Seguro.ValorVeiculo, System.Data.DbType.Decimal);
+            parameters.Add("valorveiculo", Seguro.ValorVeiculo, System.Data.DbType.Double);
             parameters.Add("marcamodeloveiculo", Seguro.MarcaModeloVeiculo, System.Data.DbType.String);
-            parameters.Add("valorseguro", Seguro.ValorSeguro, System.Data.DbType.Decimal);
+            parameters.Add("valorseguro", Seguro.ValorSeguro, System.Data.DbType.Double);
 
 
             using var connection = _dbContext.CreateConnection();
@@ -31,7 +31,7 @@ namespace Infra.Repository.Repositories.AddSeguro
             connection.Execute(query, parameters);
         }
 
-        public void CalulcarSeguro(decimal valorVeiculo)
+        public void CalulcarSeguro(double valorVeiculo)
         {
             throw new NotImplementedException();
         }

@@ -23,7 +23,7 @@ namespace SeguroVeiculos.Application.UseCases.AddSeguro
             _addSeguroRepository.AddSeguro(seguro);
         }
 
-        public void CalcularSeguro(decimal valorVeiculo)
+        public void CalcularSeguro(double valorVeiculo)
         {
             throw new NotImplementedException();
         }

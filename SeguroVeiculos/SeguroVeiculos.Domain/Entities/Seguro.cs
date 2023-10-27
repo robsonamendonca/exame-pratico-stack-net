@@ -8,7 +8,7 @@ namespace SeguroVeiculos.Domain.Entities
 {
     public class Seguro
     {
-        public Seguro(string nome, string cpf, decimal valorVeiculo, string marcaModeloveiculo)
+        public Seguro(string nome, string cpf, double valorVeiculo, string marcaModeloveiculo)
         {
             Nome = nome;
             CPF = cpf;
@@ -18,22 +18,22 @@ namespace SeguroVeiculos.Domain.Entities
 
         public string Nome { get; private set; } 
         public string CPF { get; private set; } 
-        public decimal ValorVeiculo { get; private set; }
+        public double ValorVeiculo { get; private set; }
         public string MarcaModeloVeiculo { get; private set; } 
-        public decimal ValorSeguro { get; private set; }
+        public double ValorSeguro { get; private set; }
 
 
         public void CalcularSeguro()
         {
-            const decimal MARGEM_SEGURANCA = 0.03m;
-            const decimal LUCRO = 0.05m;
+            const double MARGEM_SEGURANCA = 0.03;
+            const double LUCRO = 0.05;
 
-            decimal taxaRisco = (ValorVeiculo * 5) / (2 * ValorVeiculo);
-            decimal premioRisco = taxaRisco * ValorVeiculo;
-            decimal premioPuro = premioRisco * (1 + MARGEM_SEGURANCA);
-            decimal premioComercial = LUCRO * premioPuro;
+            double taxaRisco = ((ValorVeiculo * 5) / (ValorVeiculo * 2) / 100);
+            double premioRisco = taxaRisco * ValorVeiculo;
+            double premioPuro = premioRisco * (1 + MARGEM_SEGURANCA);
+            double premioComercial = (LUCRO * premioPuro) + premioPuro;
 
-            ValorSeguro =  premioComercial;
+            ValorSeguro = Math.Round(premioComercial, 2, MidpointRounding.ToZero); ;
         }
 
     }

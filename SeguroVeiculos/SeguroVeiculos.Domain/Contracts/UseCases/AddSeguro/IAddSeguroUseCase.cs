@@ -8,6 +8,6 @@ namespace SeguroVeiculos.Domain.Contracts.UseCases.AddSeguro
 
         void PesquisarSeguro(string CPF);
 
-        void CalcularSeguro(decimal valorVeiculo);
+        void CalcularSeguro(double valorVeiculo);
     }
 }

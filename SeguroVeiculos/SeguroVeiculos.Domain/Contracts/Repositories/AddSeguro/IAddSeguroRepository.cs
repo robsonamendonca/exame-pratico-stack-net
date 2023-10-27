@@ -13,7 +13,7 @@ namespace SeguroVeiculos.Domain.Contracts.Repositories.AddSeguro
 
         void PesquisarSeguro(string CPF);
 
-        void CalulcarSeguro(decimal valorVeiculo);
+        void CalulcarSeguro(double valorVeiculo);
 
         void GerarRelatorio();
 
