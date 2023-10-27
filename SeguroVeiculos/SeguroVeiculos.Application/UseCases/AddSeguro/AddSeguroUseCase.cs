@@ -22,5 +22,17 @@ namespace SeguroVeiculos.Application.UseCases.AddSeguro
         {
             _addSeguroRepository.AddSeguro(seguro);
         }
+
+        public void CalcularSeguro(decimal valorVeiculo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void PesquisarSeguro(string CPF)
+        {
+            throw new NotImplementedException();
+        }
+
+
     }
 }

@@ -10,5 +10,12 @@ namespace SeguroVeiculos.Domain.Contracts.Repositories.AddSeguro
     public interface IAddSeguroRepository
     {
         void AddSeguro(Seguro seguro);
+
+        void PesquisarSeguro(string CPF);
+
+        void CalulcarSeguro(decimal valorVeiculo);
+
+        void GerarRelatorio();
+
     }
 }

@@ -1,5 +1,4 @@
 ﻿using FluentValidation;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SeguroVeiculos.API.Models.AddSeguro;
 using SeguroVeiculos.Domain.Contracts.UseCases.AddSeguro;
@@ -29,9 +28,34 @@ namespace SeguroVeiculos.API.Controllers
             {
                 return BadRequest(validatorResult.Errors.ToCustomValidationFailure());
             }
-            var seguro = new Seguro(input.Nome, input.CPF, input.ValorVeiculo, input.MarcaModeloVeiculo, input.ValorVeiculo);
+            var seguro = new Seguro(input.Nome, input.CPF, input.ValorVeiculo, input.MarcaModeloVeiculo);
+            seguro.CalcularSeguro();
             _addSeguroUseCase.AddSeguro(seguro);
             return Created("", seguro);
         }
+
+        [HttpGet]
+        [Route("Pesquisar/")]
+        public IActionResult GetSeguro(string CPF)
+        {
+             _addSeguroUseCase.PesquisarSeguro(CPF);
+            return Ok(CPF);
+        }
+
+
+        [HttpGet]
+        [Route("Calcular/")]
+        public IActionResult GetCalcular(decimal valorVeiculo)
+        {
+            return Ok(valorVeiculo);
+        }
+
+        [HttpGet]
+        [Route("Gerar/")]
+        public IActionResult GetRelatorio()
+        {
+            return Ok("ok");
+        }
+
     }
 }

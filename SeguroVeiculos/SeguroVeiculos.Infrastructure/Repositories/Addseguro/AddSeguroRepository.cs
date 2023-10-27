@@ -30,5 +30,26 @@ namespace Infra.Repository.Repositories.AddSeguro
 
             connection.Execute(query, parameters);
         }
+
+        public void CalulcarSeguro(decimal valorVeiculo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void GerarRelatorio()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void PesquisarSeguro(string CPF)
+        {
+            var query = "SELECT * FROM SeguroVeiculo where cpf = @cpf";
+            var parameters = new DynamicParameters();
+            parameters.Add("cpf", CPF, System.Data.DbType.String);
+            using var connection = _dbContext.CreateConnection();
+
+            connection.ExecuteReader(query, parameters);
+
+        }
     }
 }
