@@ -1,4 +1,5 @@
-﻿using SeguroVeiculos.Domain.Entities;
+﻿using SeguroVeiculos.API.Models.AddSeguro;
+using SeguroVeiculos.Domain.Entities;
 
 namespace SeguroVeiculos.Domain.Contracts.UseCases.AddSeguro
 {
@@ -9,5 +10,7 @@ namespace SeguroVeiculos.Domain.Contracts.UseCases.AddSeguro
         Seguro PesquisarSeguro(string CPF);
 
         void CalcularSeguro(double valorVeiculo);
+
+        Relatorio GerarRelatorio();
     }
 }

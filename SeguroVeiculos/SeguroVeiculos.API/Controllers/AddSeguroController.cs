@@ -62,7 +62,12 @@ namespace SeguroVeiculos.API.Controllers
         [Route("Gerar/")]
         public IActionResult GetRelatorio()
         {
-            return Ok("ok");
+            var relatorio = _addSeguroUseCase.GerarRelatorio();
+            if (relatorio == null)
+            {
+                return BadRequest("Nenhum dado encontrado!");
+            }
+            return Ok(relatorio);
         }
 
     }

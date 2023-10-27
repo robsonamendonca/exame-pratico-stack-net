@@ -1,0 +1,40 @@
+<div class="container">
+  <h1>Cálculo de Seguro de Veículos</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="valorVeiculo">Valor do Veículo:</label>
+        <input type="number" id="valorVeiculo" class="form-control" [(ngModel)]="novoSeguro.valorVeiculo" name="valorVeiculo" required>
+      </div>
+      <div class="form-group">
+        <label for="marcaModeloVeiculo">Marca/Modelo do Veículo:</label>
+        <input type="text" id="marcaModeloVeiculo" class="form-control" [(ngModel)]="novoSeguro.marcaModeloVeiculo" name="marcaModeloVeiculo" required>
+      </div>
+      <div class="form-group">
+        <label for="nomeSegurado">Nome do Segurado:</label>
+        <input type="text" id="nomeSegurado" class="form-control" [(ngModel)]="novoSeguro.nomeSegurado" name="nomeSegurado" required>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" class="form-control" [(ngModel)]="novoSeguro.cpf" name="cpf" required>
+      </div>
+      <div class="form-group">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" class="form-control" [(ngModel)]="novoSeguro.idade" name="idade" required>
+      </div>
+      <button class="btn btn-primary" (click)="createSeguro()">Calcular Seguro</button>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <h2>Relatório de Seguros</h2>
+      <button class="btn btn-primary" (click)="generateReport()">Gerar Relatório</button>
+      <div *ngIf="relatorio" class="mt-3">
+        <p>Média de Idade: {{ relatorio.mediaIdade }}</p>
+        <p>Média de Valor Veiculo: {{ relatorio.mediaValor }}</p>
+      </div>
+    </div>
+  </div>
+</div>

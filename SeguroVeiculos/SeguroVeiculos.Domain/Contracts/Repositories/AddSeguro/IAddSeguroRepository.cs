@@ -1,4 +1,5 @@
-﻿using SeguroVeiculos.Domain.Entities;
+﻿using SeguroVeiculos.API.Models.AddSeguro;
+using SeguroVeiculos.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace SeguroVeiculos.Domain.Contracts.Repositories.AddSeguro
 
         Seguro CalulcarSeguro(double valorVeiculo);
 
-        void GerarRelatorio();
+        Relatorio GerarRelatorio();
 
     }
 }

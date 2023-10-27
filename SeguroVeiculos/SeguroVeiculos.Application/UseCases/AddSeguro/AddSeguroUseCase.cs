@@ -1,4 +1,5 @@
-﻿using SeguroVeiculos.Domain.Contracts.Repositories.AddSeguro;
+﻿using SeguroVeiculos.API.Models.AddSeguro;
+using SeguroVeiculos.Domain.Contracts.Repositories.AddSeguro;
 using SeguroVeiculos.Domain.Contracts.UseCases.AddSeguro;
 using SeguroVeiculos.Domain.Entities;
 
@@ -28,6 +29,10 @@ namespace SeguroVeiculos.Application.UseCases.AddSeguro
             return _addSeguroRepository.PesquisarSeguro(CPF);
         }
 
+        public Relatorio GerarRelatorio()
+        {
+            return _addSeguroRepository.GerarRelatorio();
+        }
 
     }
 }
