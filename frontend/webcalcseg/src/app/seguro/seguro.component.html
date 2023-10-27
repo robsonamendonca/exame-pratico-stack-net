@@ -1,4 +1,15 @@
 <div class="container">
+    <div class="row mt-4">
+    <div class="col-md-6">
+      <h2>Relatório de Seguros</h2>
+      <button class="btn btn-primary" (click)="generateReport()">Gerar Relatório</button>
+      <div *ngIf="relatorio" class="mt-3">
+        <p>Média de Valor Seguro: {{ relatorio.mediaValorSeguro }}</p>
+        <p>Média de Valor Veiculo: {{ relatorio.mediaValorVeiculo }}</p>
+      </div>
+    </div>
+  </div>
+  <hr/>
   <h1>Cálculo de Seguro de Veículos</h1>
   <div class="row">
     <div class="col-md-6">
@@ -12,7 +23,7 @@
       </div>
       <div class="form-group">
         <label for="nomeSegurado">Nome do Segurado:</label>
-        <input type="text" id="nomeSegurado" class="form-control" [(ngModel)]="novoSeguro.nomeSegurado" name="nomeSegurado" required>
+        <input type="text" id="nomeSegurado" class="form-control" [(ngModel)]="novoSeguro.nome" name="nome" required>
       </div>
     </div>
     <div class="col-md-6">
@@ -24,17 +35,9 @@
         <label for="idade">Idade:</label>
         <input type="number" id="idade" class="form-control" [(ngModel)]="novoSeguro.idade" name="idade" required>
       </div>
+      <br/>
       <button class="btn btn-primary" (click)="createSeguro()">Calcular Seguro</button>
     </div>
   </div>
-  <div class="row mt-4">
-    <div class="col-md-6">
-      <h2>Relatório de Seguros</h2>
-      <button class="btn btn-primary" (click)="generateReport()">Gerar Relatório</button>
-      <div *ngIf="relatorio" class="mt-3">
-        <p>Média de Idade: {{ relatorio.mediaIdade }}</p>
-        <p>Média de Valor Veiculo: {{ relatorio.mediaValor }}</p>
-      </div>
-    </div>
-  </div>
+
 </div>

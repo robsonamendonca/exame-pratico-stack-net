@@ -26,7 +26,6 @@ export class SeguroService {
   }
 
   generateReport(): Observable<any> {
-    console.log(`chmando... ${this.apiUrl}/Gerar`);
     return this.http.get<any>(`${this.apiUrl}/Gerar`);
   }
 }
